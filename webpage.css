@@ -1,0 +1,397 @@
+body{
+
+}
+div{
+    display: flex;
+}
+div h1{
+    align-content: flex-start;
+   position: absolute;
+   top: 15%;
+   left: 0%;
+   color: #f5f5f5;
+   font-size: 100px;
+  animation: b 2s infinite;
+}
+@keyframes b{
+    50%{transition: translate 1s ease-in;translate: 0px 10px 0px;}
+}
+#info{
+    align-content: flex-start;
+   position: absolute;
+   top:0%;
+   left: 0%;
+   color: #f5f5f5;
+   width: 50vw;
+   height: 100vh;
+   font-size: 25px;
+   filter: blur(50%);
+  opacity: 0%;
+   align-content: flex-end;
+  transition: opacity 1s ease-in-out;
+   opacity:0%;
+}
+.features{
+    display: grid;
+    
+    height: 100vh;
+   
+    font-size: 40px;
+    width: 50vw;
+    
+}
+.align{
+    display: grid;
+   
+   
+    left: 52vw;
+   
+   
+    font-size: 40px;
+    width: 45vw;
+    z-index: -1px;
+    
+}
+#features
+{
+    position: absolute;
+    top: 15vh;
+    font-size: 3vw;
+    transition: rotate 1s ease-in-out;
+}
+#visiting
+{
+    position: absolute;
+    top: 80vh;
+    font-size: 3vw;
+    transition: rotate 1s ease-in-out;
+}
+#dinning
+{
+    position: absolute;
+    top: 200vh;
+    font-size: 3vw;
+    transition: rotate 1s ease-in-out;
+   
+}
+#features:hover
+{
+   rotate: 1 0  0 -20deg;
+}
+#visiting:hover
+{
+   rotate: 1 0 0 20deg;
+}
+#dinning:hover
+{
+   rotate: 1 0 0 -20deg;
+}
+#head
+{
+   font-size: 8vw;
+    color: antiquewhite;
+}
+u{
+    animation: under 2s infinite;
+}
+@keyframes under
+{
+    0%{color: rgb(253, 10, 253);}
+    
+  
+    40%{color: rgb(191, 7, 247);}
+    80%{color: red;}
+    100%{color: black;}
+}
+.features,.visiting,.dining
+{
+    animation: text 1s ease-in;
+}
+@keyframes text{
+    0%{position: absolute;left: 0%;opacity: 0%;}
+   
+    100%{position: absolute;left: 50%;}
+   
+}
+
+p{
+    font-size: 40px;
+    position: absolute;
+    top: 140%;
+    
+}
+#info
+{position: fixed;
+top: 11%;
+height: 80vh;
+font-size: 2vw;
+
+}
+#info:hover{
+    opacity: 100%;
+    animation: a 2s infinite;
+}
+@keyframes a{
+    30%{color: antiquewhite;}
+    75%{color:white;}
+
+}
+
+#head
+{
+    position: fixed;
+}
+#head:hover{
+    opacity: 100%;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:grey;
+    padding: 4vh 40px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    opacity: 100%;
+    
+    opacity: 80%;
+    box-shadow:0px 30px 50px  #333;
+    
+    
+}
+#box
+{
+    width: 100vw;
+    height: 11vh;
+    filter: blur(20px);
+    background-color:black;
+    position: fixed;
+    
+   
+}
+#eiffeltower
+{
+    position: fixed;
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    top: 11vh;
+    z-index: -10px;
+ 
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    animation: logo 4s infinite;
+}
+@keyframes logo{
+0%{color: white;}
+25%{color:cyan;}
+50%{color:yellow;}
+75%{color: cyan;}
+100%{color: yellow;}
+
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+.menubutton
+{
+   transition: width 0.5s ease-in-out;
+   transition: height 0.5s ease-in-out;
+   color:orange ;
+    
+}
+
+    
+ .menubutton:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:orange ;
+   
+    height: 50px;
+    width: 100px;
+    background-color:black;
+    opacity: 100%;
+    
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero {
+    text-align: center;
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #090606;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tours {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tour-card {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tour-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tour-card h3 {
+    margin: 15px 0 10px;
+}
+
+.tour-card p {
+    color: #666;
+}
+
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial-card {
+    width: 70%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: #555;
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .tour-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+}
