@@ -1,6 +1,69 @@
 body{
 
 }
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+width: 98vw;
+height: 140vw;
+}
+
+@media screen and (max-width: 600px) {
+#main
+{
+    display:absolute;
+    height: 800vw;
+   
+    right: 20px;
+  width: 1px;
+   font-size: 20px;
+  
+   
+}
+#eiffeltower{
+    width: 100vh;
+    height: 100vh;
+}
+.content
+{
+    width: 1px;
+    position: absolute;
+    right:10%;
+}
+.item{
+   
+    width: 20px;
+}
+
+
+}
+.item{
+    display: flex;
+   
+  justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 46vw;
+   padding:3vw ;
+   font-size: 45px;
+}
+.item:hover
+{
+   rotate: 1 0  0 -20deg;
+}
+.item
+{
+   transition:  rotate 0.5s ease-in;
+    animation: text 2s ease-in;
+}
+@keyframes text{
+    0%{left: 0%;opacity: 0%;}
+   
+    100%{left: 50%;}
+   
+}
 div{
     display: flex;
 }
@@ -9,6 +72,7 @@ div h1{
    position: absolute;
    top: 15%;
    left: 0%;
+   width: 50vw;
    color: #f5f5f5;
    font-size: 100px;
   animation: b 2s infinite;
@@ -31,61 +95,12 @@ div h1{
   transition: opacity 1s ease-in-out;
    opacity:0%;
 }
-.features{
-    display: grid;
+
     
-    height: 100vh;
-   
-    font-size: 40px;
-    width: 50vw;
-    
-}
-.align{
-    display: grid;
-   
-   
-    left: 52vw;
-   
-   
-    font-size: 40px;
-    width: 45vw;
-    z-index: -1px;
-    
-}
-#features
-{
-    position: absolute;
-    top: 15vh;
-    font-size: 3vw;
-    transition: rotate 1s ease-in-out;
-}
-#visiting
-{
-    position: absolute;
-    top: 80vh;
-    font-size: 3vw;
-    transition: rotate 1s ease-in-out;
-}
-#dinning
-{
-    position: absolute;
-    top: 200vh;
-    font-size: 3vw;
-    transition: rotate 1s ease-in-out;
-   
-}
-#features:hover
-{
-   rotate: 1 0  0 -20deg;
-}
-#visiting:hover
-{
-   rotate: 1 0 0 20deg;
-}
-#dinning:hover
-{
-   rotate: 1 0 0 -20deg;
-}
+
+
+
+
 #head
 {
    font-size: 8vw;
@@ -103,23 +118,7 @@ u{
     80%{color: red;}
     100%{color: black;}
 }
-.features,.visiting,.dining
-{
-    animation: text 1s ease-in;
-}
-@keyframes text{
-    0%{position: absolute;left: 0%;opacity: 0%;}
-   
-    100%{position: absolute;left: 50%;}
-   
-}
 
-p{
-    font-size: 40px;
-    position: absolute;
-    top: 140%;
-    
-}
 #info
 {position: fixed;
 top: 11%;
@@ -161,7 +160,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:grey;
+    background-color:black;
     padding: 4vh 40px;
     position: fixed;
     width: 100vw;
@@ -169,7 +168,7 @@ body {
     opacity: 100%;
     
     opacity: 80%;
-    box-shadow:0px 30px 50px  #333;
+    box-shadow:0px 30px 50px  black;
     
     
 }
@@ -177,9 +176,10 @@ body {
 {
     width: 100vw;
     height: 11vh;
-    filter: blur(20px);
-    background-color:black;
+    filter: blur(30px);
+    background-color:pink;
     position: fixed;
+    top: 0%;
     
    
 }

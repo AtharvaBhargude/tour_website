@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakages</title>
+<link rel="stylesheet" href="webpage.css">
+</head>
+ 
+<style>
+    
+.grid{
+    display: grid;
+   margin-left: 10px;
+    grid-template-columns: 50px 50px 50px  ;
+   
+   width: 80vw;
+   height: 150vw;
+    row-gap: 100px;
+    column-gap: 50px;
+    justify-content:space-around;
+   
+   
+   
+}
+
+section{
+    position: absolute;
+    top: 300px;
+    height: 200vw;
+    width: 90vw;
+    justify-content:center;
+    height: 280vw;
+ 
+}
+
+.object
+{ height: 400px;
+    width: 350px;
+   
+    color: white;
+    background-color:black;
+  transition: translate 0.5s ease-in-out;
+  border-radius:0px 0px  40%;
+  box-shadow: 10px 10px 10px grey;
+}
+.grid div:hover
+{
+    translate: 0px -20px 0px;
+}
+@media screen and (max-width: 600px) {
+    .grid{
+    grid-template-columns: 50px ;
+  
+   row-gap: 100px;
+   width: 30vw;
+    column-gap: 20px;
+   
+    justify-content: space-evenly;
+}
+section{
+    width: 20vh;
+    position: absolute;
+    left: 20px;
+}
+#country
+{
+    display: grid;
+    grid-template-columns: 40px;
+  grid-template-rows: 50px;
+   
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 80px;
+    position: absolute;
+    top: 200px;
+    left: 40vw;
+    width: 100vw;
+   
+}
+#country div{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+}
+}
+#country
+{
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 50px;
+    row-gap: 440px;
+   
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 80px;
+    position: absolute;
+    top: 200px;
+    left: 10vw;
+    width: 100vw;
+   
+}
+#country div{
+    width: 1300px;
+    height: 100px;
+    background-color:greenyellow;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px black;
+}
+#france
+{
+    position: absolute;
+    top: 20px;
+    left: 00%;
+}
+#italy
+{
+    position: absolute;
+    top: 520px;
+    left: 00%;
+}
+#unitedstates
+{
+    position: absolute;
+    top: 1020px;
+    left: 00%;
+}
+#spain
+{
+    position: absolute;
+    top: 1520px;
+    left: 00%;
+}
+#turkey
+{
+    position: absolute;
+    top: 2020px;
+    left: 00%;
+}
+#mexico
+{
+    position: absolute;
+    top: 2520px;
+    left: 00%;
+}
+#greece
+{
+    position: absolute;
+    top: 3020px;
+    left: 00%;
+}
+#unitedkingdom
+{
+    position: absolute;
+    top: 3520px;
+    left: 00%;
+}
+#japan
+{
+    position: absolute;
+    top:4020px;
+    left: 00%;
+}
+
+.heart1{
+    background-color: red;
+    height: 120px;
+    width: 50px;
+    border-radius:  40% 40% 0% 0%;
+    transform: rotate(-45deg);
+}
+.heart2{
+    background-color: red;
+    height: 120px;
+    width: 50px;
+    border-radius:  40% 40% 0% 0%;
+    transform: rotate(45deg);
+}
+.heart_1
+{  display: flex;
+    width: 150px;
+    height: 100px;
+}
+.heart_2
+{  display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+.heart_3
+{  display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 40%;
+}
+.heart_4
+{  display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 60%;
+    top: 80%;
+}
+.heart_5
+{  display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+}
+.heart_6
+{  display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 20%;
+    top: 90%;
+   
+}
+.heart_1 {
+    animation: a 10s infinite;
+}
+@keyframes a{
+    0%{position: absolute;top: 0%;opacity: 100%;}
+    90%{position: absolute;top:3500px ;opacity: 0%;}
+    100%{position: absolute;top: 0%;opacity: 0%;}
+}
+.heart_2 {
+    animation: b 10s infinite;
+}
+@keyframes b{
+    0%{position: absolute;top: 40%;opacity: 100%;}
+    90%{position: absolute;top:3700px;opacity: 0%;}
+    100%{position: absolute;top: 0%;opacity: 0%;}
+}
+.heart_3 {
+    animation: c 10s infinite;
+}
+@keyframes c{
+    0%{position: absolute;top: 10%;opacity: 100%;}
+    90%{position: absolute;top:3400px ;opacity: 0%;}
+    100%{position: absolute;top: 0%;opacity: 0%;}
+}
+.heart_4 {
+    animation: d 10s infinite;
+}
+@keyframes d{
+    0%{position: absolute;top: 60%;opacity: 100%;}
+    90%{position: absolute;top:3500px ;opacity: 0%;}
+    100%{position: absolute;top: 0%;opacity: 0%;}
+}
+.heart_5 {
+    animation: e 10s infinite;
+}
+@keyframes e{
+    0%{position: absolute;top: 0%;opacity: 100%;}
+    90%{position: absolute;top:3900px ;opacity: 0%;}
+    100%{position: absolute;top: 0%;opacity: 0%;}
+}
+.heart_6 {
+    animation: f 10s infinite;
+}
+@keyframes f{
+    0%{position: absolute;top: 80%;opacity: 100%;}
+    90%{position: absolute;top:4000px ;opacity: 0%;}
+    100%{position: absolute;top: 0%;opacity: 0%;}
+}
+h2{
+    color: WHITE;
+    position: absolute;
+    top: 80%;
+}
+.grid  img{
+    width: 100%;
+    height: 100%;
+    border-radius:0px 0px  40%;
+}
+a{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100vw;
+}
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><b>TravelExplorer</b></div>
+        <ul class="nav-links">
+            <li class="menubutton"><a href="#">Home</a></li>
+            <li class="menubutton"><a href="#">Tours</a></li>
+            <li class="menubutton"><a href="#">About</a></li>
+            <li class="menubutton"><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+ <script src="script.js"></script>
+    <section>
+    <div class="grid" >
+   <div class="object"><h2>EIFFEL TOWER</h2> <a href="http://127.0.0.1:5500/eiffil.html"><img src="eiffeltower.jpg" alt=""></a></div>
+   <div class="object"><h2>PALACE OF VERSAILLES</h2><a href="http://127.0.0.1:5500/versalles.html"><img src="versallies.jpg" alt=""></a></div>
+   <div class="object"><h2>LOURE MUSEUM</h2> <a href="http://127.0.0.1:5500/loure_muesum.html"><img src="loure.jpg" alt=""></a></div>
+   <div class="object"><h2>COLOSSEUM</h2> <a href="http://127.0.0.1:5500/colosseum.html"><img src="colosseum.jpg" alt=""></a></div>
+   <div class="object"><h2>VENICE CANALS</h2><a href="http://127.0.0.1:5500/venice_canals.html"><img src="venicecanals.jpg" alt=""></a></div>
+   <div class="object"><h2>LEANING TOWER OF PISA</h2> <a href="http://127.0.0.1:5500/leaningtower.html"><img src="leaningtower.jpg" alt=""></a></div>
+   <div class="object"><h2>STATUE OF LIBERTY</h2><a href="http://127.0.0.1:5500/statueofliberty.html"><img src="statueofliberty.jpg" alt=""></a></div>
+   <div class="object"><h2>GRAND CANYON</h2><a href="http://127.0.0.1:5500/grandcanyon.html"><img src="grandcanyon.jpg" alt=""></a></div>
+   <div class="object"><h2>WALT DISNEY WORLD</h2><a href="http://127.0.0.1:5500/waltdisneyworld.html"><img src="waltdisneyworld.jpg" alt=""></a></div>
+   <div class="object"><h2>SAGRADA FAMILIA</h2><a href="http://127.0.0.1:5500/sagradafamilia.html"><img src="sagradafamalia.jpg" alt=""></a></div>
+   <div class="object"><h2>PARK GUELL</h2></div>
+   <div class="object"><h2>ALHAMBRA</h2></div>
+   <div class="object"><h2>HAGIA SOPHIA</h2></div>
+   <div class="object"><h2>CAPPADOCA</h2></div>
+   <div class="object"><h2>PAMUKKALE</h2></div>
+   <div class="object"><h2>CHICHEN ITZA</h2></div>
+   <div class="object"><h2>TULUM</h2></div>
+   <div class="object"><h2>TEOTIHUACAN</h2></div>
+   <div class="object"><h2>ACROPOLIS OF ATHENS</h2></div>
+   <div class="object"><h2>SANTORINI</h2></div>
+   <div class="object"><h2>METEORA</h2></div>
+   <div class="object"><h2>BUCKINGAM PALACE</h2></div>
+   <div class="object"><h2>STONEHENGE</h2></div>
+   <div class="object"><h2>TOWER OF LONDEN</h2></div>
+   <div class="object"><h2>MOUNT FUJI</h2></div>
+   <div class="object"><h2>KYOTO TEMPLES</h2></div>
+   <div class="object"><h2>TOKYO DISNEYLAND</h2></div>
+    </div>
+   
+    </section>
+    <div id="country">
+    
+        <div id="france">FRANCE</div>
+        <div id="italy">ITALY</div>
+        <div id="unitedstates">UNITED STATES</div>
+        <div id="spain">SPAIN</div>
+        <div id="turkey">TURKEY</div>
+        <div id="mexico">MEXICO</div>
+        <div id="greece">GREECE</div>
+        <div id="unitedkingdom">UNITED KINGDOM</div>
+        <div id="japan">JAPAN</div>
+        </div>
+       
+        <section class="heart_1">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+        </section>
+        <section class="heart_2">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+        </section>
+        <section class="heart_3">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+        </section>
+        <section class="heart_4">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+        </section>
+        <section class="heart_5">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+        </section>
+        <section class="heart_6">
+            <div class="heart1"></div>
+            <div class="heart2"></div>
+        </section>
+</body>
+</html>
