@@ -3,9 +3,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+#animation
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+z-index: 10;
+font-size: 200px;
+animation-duration: 1s;
+animation-name: a;
+animation-delay: 2s;
+animation-iteration-count: 1;
 
+
+}
+div img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 350px;
+}
+@keyframes a{
+    0%{z-index: 10;}
+    100%{z-index: -310;}
+}
+#a1
+{  z-index: 100;
+    animation: a1 2s ease-in;
+    position: relative;
+    top: -450px;
+}
+@keyframes a1
+{
+    0%{margin-left: -100%;}
+    100%{margin-left: 0%;}
+}
+#a2
+{
+    z-index: 100;
+    animation: a2 2s ease-in;
+    position: relative;
+    top: -400px;
+}
+@keyframes a2
+{
+    0%{margin-right: -100%;}
+    100%{margin-right: 0%;}
+}
+#a3
+{
+    z-index: 100;
+    animation: a3 2s ease-in;
+    position: relative;
+    top: -350px;
+}
+@keyframes a3
+{
+    0%{margin-left: -100%;}
+    100%{margin-left: 0%;}
+}
 body {
     font-family: Arial, sans-serif;
+    background-color: aqua;
 }
 .item
 {
@@ -23,6 +85,7 @@ body {
     align-items: center;
     background-color: #333;
     padding: 30px 40px;
+    z-index: 1;
 }
 
 .navbar .logo {
@@ -149,6 +212,69 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    animation: logo 4s infinite;
+}
+@keyframes logo{
+0%{color: white;}
+25%{color:cyan;}
+50%{color:yellow;}
+75%{color: cyan;}
+100%{color: yellow;}
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 4vh 40px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    opacity: 100%;
+    
+    opacity: 80%;
+    box-shadow:0px 30px 50px  black;
+}
+.menubutton
+{
+   transition: width 0.5s ease-in-out;
+   transition: height 0.5s ease-in-out;
+   color:orange ;
+    
+}
+
+    
+ .menubutton:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:orange ;
+   
+    height: 50px;
+    width: 100px;
+    background-color:black;
+    opacity: 100%;
+    
+}
+.pic{
+    height: 200px;
+    width: 100px;
+}
+#photos
+{
+    position: absolute;
+    top: 1000px;
+}
+#photo1
+{
+    display: flexbox;
+    justify-content:space-evenly;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {

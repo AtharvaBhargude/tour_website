@@ -42,7 +42,7 @@ section{
     background-color:black;
   transition: translate 0.5s ease-in-out;
   border-radius:0px 0px  40%;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 10px 10px 10px rgb(1, 49, 10);
 }
 .grid div:hover
 {
@@ -124,6 +124,9 @@ section{
     position: absolute;
     top: 1020px;
     left: 00%;
+    font-style: bold;
+    
+    
 }
 #spain
 {
@@ -143,7 +146,7 @@ section{
     top: 2520px;
     left: 00%;
 }
-#greece
+#india
 {
     position: absolute;
     top: 3020px;
@@ -163,66 +166,94 @@ section{
 }
 
 .heart1{
-    background-color: red;
+    background-color:yellow;
     height: 120px;
     width: 50px;
-    border-radius:  40% 40% 0% 0%;
+    border-radius:  50%;
     transform: rotate(-45deg);
+    box-shadow: 0px 10px 10px yellow;
 }
 .heart2{
-    background-color: red;
+    background-color:yellow;
     height: 120px;
     width: 50px;
-    border-radius:  40% 40% 0% 0%;
+    border-radius:  50% ;
     transform: rotate(45deg);
+    box-shadow: 0px 10px 10px yellow;
+}
+.heart4{
+    background-color:yellow;
+    height: 120px;
+    width: 50px;
+    border-radius:  50% ;
+    transform: rotate(-90deg);
+    box-shadow: 0px 10px 10px yellow;
+}
+.heart5{
+    background-color:yellow;
+    height: 120px;
+    width: 50px;
+    border-radius:  50% ;
+    transform: rotate(90deg);
+    box-shadow: 0px 10px 10px yellow;
+}
+.heart6{
+    background-color:yellow;
+    height: 120px;
+    width: 50px;
+    border-radius:  50% ;
+    transform: rotate(180deg);
+    box-shadow: 0px 10px 10px yellow;
+    position: relative;
+    left: -75%;
 }
 .heart_1
 {  display: flex;
-    width: 150px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
 }
 .heart_2
 {  display: flex;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
     position: absolute;
     left: 20%;
     top: 10%;
 }
 .heart_3
 {  display: flex;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
     position: absolute;
     left: 40%;
 }
 .heart_4
 {  display: flex;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
     position: absolute;
     left: 60%;
     top: 80%;
 }
 .heart_5
 {  display: flex;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
     position: absolute;
     left: 80%;
     top: 30%;
 }
 .heart_6
 {  display: flex;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 10px;
     position: absolute;
     left: 20%;
     top: 90%;
    
 }
 .heart_1 {
-    animation: a 10s infinite;
+    animation: a 20s infinite;
 }
 @keyframes a{
     0%{position: absolute;top: 0%;opacity: 100%;}
@@ -230,7 +261,7 @@ section{
     100%{position: absolute;top: 0%;opacity: 0%;}
 }
 .heart_2 {
-    animation: b 10s infinite;
+    animation: b 20s infinite;
 }
 @keyframes b{
     0%{position: absolute;top: 40%;opacity: 100%;}
@@ -238,7 +269,7 @@ section{
     100%{position: absolute;top: 0%;opacity: 0%;}
 }
 .heart_3 {
-    animation: c 10s infinite;
+    animation: c 20s infinite;
 }
 @keyframes c{
     0%{position: absolute;top: 10%;opacity: 100%;}
@@ -246,7 +277,7 @@ section{
     100%{position: absolute;top: 0%;opacity: 0%;}
 }
 .heart_4 {
-    animation: d 10s infinite;
+    animation: d 20s infinite;
 }
 @keyframes d{
     0%{position: absolute;top: 60%;opacity: 100%;}
@@ -254,7 +285,7 @@ section{
     100%{position: absolute;top: 0%;opacity: 0%;}
 }
 .heart_5 {
-    animation: e 10s infinite;
+    animation: e 20s infinite;
 }
 @keyframes e{
     0%{position: absolute;top: 0%;opacity: 100%;}
@@ -262,7 +293,7 @@ section{
     100%{position: absolute;top: 0%;opacity: 0%;}
 }
 .heart_6 {
-    animation: f 10s infinite;
+    animation: f 20s infinite;
 }
 @keyframes f{
     0%{position: absolute;top: 80%;opacity: 100%;}
@@ -285,12 +316,24 @@ a{
 }
 body{
     width: 100vw;
+    background-color:rgb(81, 141, 118);
+}
+ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubutton:hover
+{
+background-color: gray;
+
 }
 </style>
 
 <body>
     <nav class="navbar">
-        <div class="logo"><b>TravelExplorer</b></div>
+        <div class="logo"><b>FantasticVoyage<sup>TM</sup></b></div>
         <ul class="nav-links">
             <li class="menubutton"><a href="#">Home</a></li>
             <li class="menubutton"><a href="#">Tours</a></li>
@@ -324,9 +367,9 @@ body{
    <div class="object"><h2>CHICHEN ITZA</h2></div>
    <div class="object"><h2>TULUM</h2></div>
    <div class="object"><h2>TEOTIHUACAN</h2></div>
-   <div class="object"><h2>ACROPOLIS OF ATHENS</h2></div>
-   <div class="object"><h2>SANTORINI</h2></div>
-   <div class="object"><h2>METEORA</h2></div>
+   <div class="object"><h2>TAJ MAHAL</h2></div>
+   <div class="object"><h2>DAL LAKE</h2></div>
+   <div class="object"><h2>JAIPUR</h2></div>
    <div class="object"><h2>BUCKINGAM PALACE</h2></div>
    <div class="object"><h2>STONEHENGE</h2></div>
    <div class="object"><h2>TOWER OF LONDEN</h2></div>
@@ -344,7 +387,7 @@ body{
         <div id="spain">SPAIN</div>
         <div id="turkey">TURKEY</div>
         <div id="mexico">MEXICO</div>
-        <div id="greece">GREECE</div>
+        <div id="india">INDIA</div>
         <div id="unitedkingdom">UNITED KINGDOM</div>
         <div id="japan">JAPAN</div>
         </div>
@@ -352,26 +395,50 @@ body{
         <section class="heart_1">
             <div class="heart1"></div>
             <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="heart6"></div>
         </section>
         <section class="heart_2">
             <div class="heart1"></div>
             <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="heart6"></div>
         </section>
         <section class="heart_3">
             <div class="heart1"></div>
             <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="heart6"></div>
         </section>
         <section class="heart_4">
             <div class="heart1"></div>
             <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="heart6"></div>
         </section>
         <section class="heart_5">
             <div class="heart1"></div>
             <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="heart6"></div>
         </section>
         <section class="heart_6">
             <div class="heart1"></div>
             <div class="heart2"></div>
+            <div class="heart3"></div>
+            <div class="heart4"></div>
+            <div class="heart5"></div>
+            <div class="heart6"></div>
         </section>
 </body>
 </html>
