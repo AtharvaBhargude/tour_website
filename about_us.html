@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css1.css">
+</head>
+<style>
+    footer{
+        position: absolute;
+        top: 400%;
+        width: 100vw;
+    }
+    body{
+        background-color: peachpuff;
+    }
+    .about_info
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: blueviolet;
+       height: 100vh;
+       background-image: url(about_us.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       font-size: 250px;
+       position: sticky;
+       top: 0px;
+    }
+    .div
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        padding: 30px;
+        height: 100vh;
+        position: sticky;
+        top: 0px;
+        backdrop-filter: blur(20px);
+    }
+    .menubutton
+{
+    border-radius: 20%;
+}
+.menubutton:hover
+{
+background-color: gray;
+border-radius: 20%;
+
+}
+   
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo"><b>FantasticVoyage<sup>TM</sup></b></div>
+        <ul class="nav-links">
+            <li class="menubutton"><a href="http://127.0.0.1:5500/landingpage.html">Home</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/pakages.html">Tours</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/about_us.html">About</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section>
+<div class="about_info">
+ABOUT US
+</section>
+
+<div class="div" id="div1">
+    Welcome to FantasticVoyage, your trusted companion for unforgettable journeys around the globe!
+
+    At FantasticVoyage, we believe that travel is more than just visiting places—it's about embracing cultures, creating memories, and experiencing life through a different lens. Whether you're seeking serene beaches, bustling cities, or hidden gems off the beaten path, we've got you covered.
+    </div>
+    <div class="div" id="div2">Our team of passionate explorers and travel enthusiasts is dedicated to curating exceptional travel experiences tailored to your interests and budget. From expert tips to handpicked destinations, we ensure every trip becomes a story worth telling.</div>
+<div class="div" id="div3">We’re not just a travel website; we’re your gateway to the world. So, let us inspire your wanderlust, help you plan the adventure of a lifetime, and make every journey as seamless as it is spectacular.
+
+    Start exploring today and discover where your next adventure will take you!</div>
+</div>
+
+    <footer>
+        <p>&copy; 2025 FantasticVoyage. All rights reserved.</p>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>

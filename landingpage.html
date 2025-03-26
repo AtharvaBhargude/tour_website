@@ -7,16 +7,28 @@
     <link rel="stylesheet" href="css1.css">
 </head>
 <style>
+    body
+    {
+        background-color: peachpuff;
+    }
+    #animation
+    {
+        position: sticky;
+    top: 00%;
+    z-index: -100
+    ;
+    }
     #best
     {
         display: flex;
         flex-direction: row;
         padding: 10px;
-        height: 500px;
-        background-color:black;
+        height: 62vh;
+        backdrop-filter: blur(10px);
         justify-content: center;
       position: relative;
-      top: 100px;
+      top: 0px;
+      
         
     }
     .design{
@@ -25,6 +37,7 @@
       height: 100%;
       position: relative;
       top: 10px;
+      
     }
     #img1{
   transition: width 1s ease-in-out;
@@ -32,6 +45,7 @@
     #img1:hover
     {
     width: 800px;
+    height: 62vh;
     }
     #img2{
   transition: width 1s ease-in-out;
@@ -39,6 +53,7 @@
     #img2:hover
     {
     width: 800px;
+    height: 62vh;
     }
     #img3{
   transition: width 1s ease-in-out;
@@ -46,6 +61,7 @@
     #img3:hover
     {
     width: 800px;
+    height: 62vh;
     }
     #img4{
   transition: width 1s ease-in-out;
@@ -53,6 +69,7 @@
     #img4:hover
     {
     width: 800px;
+    height: 62vh;
     }
     #img5{
   transition: width 1s ease-in-out;
@@ -60,32 +77,126 @@
     #img5:hover
     {
     width: 800px;
+    height: 62vh;
     }
     #tours h1{
         font-size: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+      
         background-color: peru;
         position: relative;
-        top: 100px;
+        top: 0px;
     }
   #best img{
     position: relative;
     top: 0px;
   }
+ .design
+ {
+    color:black;
+    font-size: 30px;
+ }
+ .bestcontainer{
+    position: sticky;
+    top: 00%;
+    backdrop-filter: blur(10px);
+ }
+  .bestcontainer
+  { display: flex;
+  
+    padding: 150px 0px 10px 0px;
+    transition: position 1s ease-in;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+   
+   
+  }
+.tour-card
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+.tours
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 5%;
+    backdrop-filter: blur(10px);
+}
+.tour-card img{
+    position: relative;
+    top: 0px;
+}
+.hero div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 70px;
+    backdrop-filter: blur(100px);
+    z-index: 10;
+   
+    height: 100vh;
+    color: brown;
 
+}
+.hero{
+    position: sticky;
+    top: 0px;
+    transition: rotate 1s ease-in-out;
+}
+.hero:hover{
+    rotate: 1 0 0 30deg;
+}
+.testimonials
+{
+    position: sticky;
+    top: 00%;
+    backdrop-filter: blur(10px);
+}
+footer{
+    position: sticky;
+    top: 00%;
+}
+.tour-card{
+    transition: translate 1s ease-in-out;
+}
+.tour-card:hover
+{
+    translate: 0px -20px 0px;
+}
+.testimonial-card
+{
+    transition: width 1s ease-in-out;
+}
+.testimonial-card:hover{
+    width: 1400px;
+}
+.menubutton:hover
+{
+background-color: gray;
+border-radius: 20%;
+
+}
 
 </style>
 <body>
     <nav class="navbar">
         <div class="logo"><b>FantasticVoyage<sup>TM</sup></b></div>
         <ul class="nav-links">
-            <li class="menubutton"><a href="#">Home</a></li>
-            <li class="menubutton"><a href="#">Tours</a></li>
-            <li class="menubutton"><a href="#">About</a></li>
-            <li class="menubutton"><a href="#">Contact</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/landingpage.html">Home</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/pakages.html">Tours</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/about_us.html">About</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -101,63 +212,68 @@
 <div id="a2">DISCOVER.</div>
 <div id="a3">REPEAT.</div>
 </div>
+<div class="container">
+<div class="bestcontainer">
 <div id="tours"><h1>OUR BEST TOURS</h1></div>
 <div id="best">
-<div class="design" id="img1"><img src="tajmahal.jpg" alt=""></div>
-<div class="design" id="img2"><img src="eiffeltower.jpg" alt=""></div>
-<div class="design" id="img3"><img src="waltdisneyworld.jpg" alt=""></div>
-<div class="design" id="img4"><img src="venicecanals.jpg" alt=""></div>
-<div class="design" id="img5"><img src="loure.jpg" alt=""></div>
+<div class="design" id="img1">TAJ MAHAL<img src="tajmahal.jpg" alt=""></div>
+<div class="design" id="img2"> EIFFEL  TOWER<img src="eiffeltower.jpg" alt=""></div>
+<div class="design" id="img3">WALT DISNEY<img src="waltdisneyworld.jpg" alt=""></div>
+<div class="design" id="img4">VENICE CANAL<img src="venicecanals.jpg" alt=""></div>
+<div class="design" id="img5">LOVERE <img src="loure.jpg" alt=""></div>
 </div>
+</div>
+</div>
+
     
     <section class="hero">
+        <div>
         <h1>Explore the World with Us</h1>
         <p>Discover new places and experience adventures like never before.</p>
+        </div>
     </section>
     
     <section class="tours">
         <h2>Our Tours</h2>
         <div class="tour-card">
-            <img src="tour1.jpg" alt="Tour 1">
+            <a href="http://127.0.0.1:5500/loure_muesum.html"><img src="loure.jpg" alt="Tour 1">
             <h3>Paris Adventure</h3>
             <p>Experience the magic of Paris in this 5-day tour.</p>
+        </a> 
+        </div>
+    
+        <div class="tour-card">
+            <a href="http://127.0.0.1:5500/Mt%20Fuji.html">
+            <img src="Mt Fuji.jpg" alt="Tour 2">
+            <h3>tour in Japan</h3>
+            <p>Join us for an unforgettable tour  in Japan.</p>
+        </a>
         </div>
         <div class="tour-card">
-            <img src="tour2.jpg" alt="Tour 2">
-            <h3>Safari in Kenya</h3>
-            <p>Join us for an unforgettable safari adventure in Kenya.</p>
-        </div>
-        <div class="tour-card">
-            <img src="tour3.jpg" alt="Tour 3">
-            <h3>Beach Relaxation</h3>
-            <p>Relax and unwind on the beautiful beaches of Bali.</p>
+            <a href="http://127.0.0.1:5500/Dal%20Lake.html">
+            <img src="Dal Lake.jpg" alt="Tour 3">
+            <h3>Lake Relaxation</h3>
+            <p>Relax and unwind on the beautiful lake of kashmir.</p>
+        </a>
         </div>
     </section>
 
     <section class="testimonials">
         <h2>What Our Customers Say</h2>
         <div class="testimonial-card">
-            <p>"TravelExplorer made my dream trip come true! Highly recommend."</p>
-            <h4>- Sarah Johnson</h4>
+            <p>"FantasticVoyage made my dream trip come true! Highly recommend."</p>
+            <h4>- Atharva Bhargude</h4>
         </div>
         <div class="testimonial-card">
             <p>"Amazing service and unforgettable experiences. Will travel again with them."</p>
-            <h4>- Michael Lee</h4>
+            <h4>- Soham Chavan</h4>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+   
 
     <footer>
-        <p>&copy; 2025 TravelExplorer. All rights reserved.</p>
+        <p>&copy; 2025 FantasticVoyage. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

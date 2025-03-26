@@ -15,7 +15,8 @@
     grid-template-columns: 50px 50px 50px  ;
    
    width: 80vw;
-   height: 150vw;
+   height: 200vw;
+   
     row-gap: 100px;
     column-gap: 50px;
     justify-content:space-around;
@@ -27,10 +28,11 @@
 section{
     position: absolute;
     top: 300px;
-    height: 200vw;
+    height: 190vw;
     width: 90vw;
     justify-content:center;
-    height: 280vw;
+    
+   
  
 }
 
@@ -207,6 +209,7 @@ section{
 {  display: flex;
     width: 20px;
     height: 10px;
+   
 }
 .heart_2
 {  display: flex;
@@ -313,6 +316,7 @@ a{
 body{
     width: 100vw;
     background-color:peachpuff;
+    height: 240vw;
 }
 ul li
 {
@@ -320,21 +324,36 @@ ul li
     justify-content: center;
     align-items: center;
 }
+.menubutton
+{
+    border-radius: 20%;
+}
 .menubutton:hover
 {
 background-color: gray;
+border-radius: 20%;
 
 }
+
+
+
+    footer
+    {
+        position: absolute;
+        top: 240vw;
+        height: 100px;
+        width: 100%;
+    }
 </style>
 
 <body>
     <nav class="navbar">
         <div class="logo"><b>FantasticVoyage<sup>TM</sup></b></div>
         <ul class="nav-links">
-            <li class="menubutton"><a href="#">Home</a></li>
-            <li class="menubutton"><a href="#">Tours</a></li>
-            <li class="menubutton"><a href="#">About</a></li>
-            <li class="menubutton"><a href="#">Contact</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/landingpage.html">Home</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/pakages.html">Tours</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/about_us.html">About</a></li>
+            <li class="menubutton"><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -360,10 +379,10 @@ background-color: gray;
    <div class="object"><h2>HAGIA SOPHIA</h2><a href="http://127.0.0.1:5500/Hagia%20Sophia.html"><img src="Hagia Sophia.jpg" alt=""></a></div>
    <div class="object"><h2>CAPPADOCA</h2><a href="http://127.0.0.1:5500/Cappadocia.html"><img src="Cappadocia.jpg" alt=""></a></div>
    <div class="object"><h2>PAMUKKALE</h2><a href="http://127.0.0.1:5500/Pamukkale.html"><img src="Pamukkale.jpg" alt=""></a></div>
-   <div class="object"><h2>CHICHEN ITZA</h2></div>
-   <div class="object"><h2>TULUM</h2></div>
-   <div class="object"><h2>TEOTIHUACAN</h2></div>
-   <div class="object"><h2>TAJ MAHAL</h2><a href="http://127.0.0.1:5500/Taj%20Mahal.html"><img src="Taj Mahal.jpg" alt=""></a></div>
+   <div class="object"><h2>MOUNT FUJI</h2><a href="http://127.0.0.1:5500/Mt%20Fuji.html"><img src="Mt Fuji.jpg" alt=""></a></div>
+   <div class="object"><h2>KYOTO TEMPLES</h2><a href="http://127.0.0.1:5500/Kyoto%20Temples.html"><img src="Kyoto Temples.jpg" alt=""></a></div>
+   <div class="object"><h2>TOKOYO DISNEYLAND</h2><a href="http://127.0.0.1:5500/Tokyo%20Disneyland.html"><img src="Tokyo disneyland.jpg" alt=""></a></div>
+   <div class="object"><h2>TAJ MAHAL</h2><a href="http://127.0.0.1:5500/Taj%20Mahal.html"><img src="tajmahal.jpg" alt=""></a></div>
    <div class="object"><h2>DAL LAKE</h2><a href="http://127.0.0.1:5500/Dal%20Lake.html"><img src="Dal Lake.jpg" alt=""></a></div>
    <div class="object"><h2>HAWA PALACE</h2><a href="http://127.0.0.1:5500/Hawa%20Mahal.html"><img src="Hawa Mahal.jpg" alt=""></a></div>
   
@@ -379,7 +398,7 @@ background-color: gray;
         <div id="turkey">TURKEY</div>
        
         <div id="india">INDIA</div>
-        <div id="unitedkingdom">UNITED KINGDOM</div>
+        
         <div id="japan">JAPAN</div>
         </div>
        
@@ -431,5 +450,8 @@ background-color: gray;
             <div class="heart5"></div>
             <div class="heart6"></div>
         </section>
+        <footer>
+            <p>&copy; 2025 FantasticVoyage. All rights reserved.</p>
+        </footer>
 </body>
 </html>
