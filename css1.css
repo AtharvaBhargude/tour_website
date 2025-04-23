@@ -34,7 +34,7 @@ div img{
 {  z-index: 100;
     animation: a1 2s ease-in;
     position: relative;
-    top: -450px;
+    top: -250px;
 }
 @keyframes a1
 {
@@ -46,7 +46,7 @@ div img{
     z-index: 100;
     animation: a2 2s ease-in;
     position: relative;
-    top: -400px;
+    top: -300px;
 }
 @keyframes a2
 {
