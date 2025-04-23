@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #70a76f, #edfd0b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place behind the booking container */
+            overflow: hidden;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: bubbleMove 10s infinite ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes bubbleMove {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-500px) scale(1.2);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-1000px) scale(0.8);
+                opacity: 0;
+            }
+        }
+
+        /* Randomize bubble positions and sizes */
+        .bubble:nth-child(1) {
+            left: 10%;
+            width: 30px;
+            height: 30px;
+            animation-duration: 8s;
+        }
+
+        .bubble:nth-child(2) {
+            left: 30%;
+            width: 50px;
+            height: 50px;
+            animation-duration: 12s;
+        }
+
+        .bubble:nth-child(3) {
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            animation-duration: 10s;
+        }
+
+        .bubble:nth-child(4) {
+            left: 70%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 14s;
+        }
+
+        .bubble:nth-child(5) {
+            left: 90%;
+            width: 20px;
+            height: 20px;
+            animation-duration: 6s;
+        }
+
+        .bubble:nth-child(6) {
+            left: 15%;
+            width: 35px;
+            height: 35px;
+            animation-duration: 9s;
+        }
+
+        .bubble:nth-child(7) {
+            left: 25%;
+            width: 45px;
+            height: 45px;
+            animation-duration: 11s;
+        }
+
+        .bubble:nth-child(8) {
+            left: 65%;
+            width: 25px;
+            height: 25px;
+            animation-duration: 7s;
+        }
+
+        .bubble:nth-child(9) {
+            left: 80%;
+            width: 55px;
+            height: 55px;
+            animation-duration: 13s;
+        }
+
+        .bubble:nth-child(10) {
+            left: 5%;
+            width: 50px;
+            height: 50px;
+            animation-duration: 15s;
+        }
+
+        .booking-container {
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            backdrop-filter: blur(10px); /* Blur effect */
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select, button {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #4facfe;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #00c6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="booking-container">
+        <h2>Book Your Tour</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="destination">Destination</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select a destination</option>
+                
+                <!-- France -->
+                <option value="eiffel_tower">Eiffel Tower</option>
+                <option value="louvre_museum">Louvre Museum</option>
+                <option value="palace_of_versailles">Palace of Versailles</option>
+                
+                <!-- Italy -->
+                <option value="colosseum">Colosseum</option>
+                <option value="venice_canals">Venice Canals</option>
+                <option value="leaning_tower_of_pisa">Leaning Tower of Pisa</option>
+                
+                <!-- United States -->
+                <option value="statue_of_liberty">Statue of Liberty</option>
+                <option value="grand_canyon">Grand Canyon</option>
+                <option value="walt_disney_world">Walt Disney World</option>
+                
+                <!-- Spain -->
+                <option value="sagrada_familia">Sagrada Familia</option>
+                <option value="park_guell">Park Güell</option>
+                <option value="alhambra">Alhambra</option>
+                
+                <!-- Turkey -->
+                <option value="hagia_sophia">Hagia Sophia</option>
+                <option value="cappadocia">Cappadocia</option>
+                <option value="pamukkale">Pamukkale</option>
+                
+                <!-- Mexico -->
+                <option value="chichen_itza">Chichen Itza</option>
+                <option value="tulum">Tulum</option>
+                <option value="teotihuacan">Teotihuacan</option>
+                
+                <!-- Greece -->
+                <option value="acropolis_of_athens">Acropolis of Athens</option>
+                <option value="santorini">Santorini</option>
+                <option value="meteora">Meteora</option>
+                
+                <!-- United Kingdom -->
+                <option value="buckingham_palace">Buckingham Palace</option>
+                <option value="stonehenge">Stonehenge</option>
+                <option value="tower_of_london">Tower of London</option>
+                
+                <!-- Japan -->
+                <option value="mount_fuji">Mount Fuji</option>
+                <option value="kyoto_temples">Kyoto Temples</option>
+                <option value="tokyo_disneyland">Tokyo Disneyland</option>
+            </select>
+
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" min="1" placeholder="Enter number of guests" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

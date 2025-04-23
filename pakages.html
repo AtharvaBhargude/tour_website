@@ -344,16 +344,65 @@ border-radius: 20%;
         height: 100px;
         width: 100%;
     }
+
+    
+    body {
+        background-color: peachpuff;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar {
+        background-color: white;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menubutton a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 20%;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .menubutton a:hover {
+        background-color: gray;
+        color: white;
+    }
+
+    /* Dark Mode */
+    body.dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .navbar.dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .menubutton.dark-mode a {
+        color: white;
+    }
+
+    .menubutton.dark-mode a:hover {
+        background-color: gray;
+        color: black;
+    }
 </style>
 
-<body>
-    <nav class="navbar">
+<body class="dark-mode">
+    <nav class="navbar dark-mode">
         <div class="logo"><b>FantasticVoyage<sup>TM</sup></b></div>
         <ul class="nav-links">
             <li class="menubutton"><a href="landingpage.html">Home</a></li>
             <li class="menubutton"><a href="pakages.html">Tours</a></li>
             <li class="menubutton"><a href="about_us.html">About</a></li>
             <li class="menubutton"><a href="contact.html">Contact</a></li>
+            <li class="menubutton"><a href="#" id="darkModeToggle">Light Mode</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -362,6 +411,40 @@ border-radius: 20%;
         </div>
     </nav>
  <script src="script.js"></script>
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+        const navbar = document.querySelector(".navbar");
+        const menuButtons = document.querySelectorAll(".menubutton a");
+
+        if (body.classList.contains("dark-mode")) {
+            darkModeToggle.textContent = "Light Mode";
+        } else {
+            darkModeToggle.textContent = "Dark Mode";
+        }
+
+        darkModeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            navbar.classList.toggle("dark-mode");
+
+            menuButtons.forEach(button => {
+                if (body.classList.contains("dark-mode")) {
+                    button.style.color = "white"; 
+                } else {
+                    button.style.color = "black"; 
+                }
+            });
+
+           
+            if (body.classList.contains("dark-mode")) {
+                darkModeToggle.textContent = "Light Mode";
+            } else {
+                darkModeToggle.textContent = "Dark Mode";
+            }
+        });
+    });
+</script>
     <section>
     <div class="grid" >
    <div class="object"><h2>EIFFEL TOWER</h2> <a href=" eiffil.html"><img src="eiffeltower.jpg" alt=""></a></div>
